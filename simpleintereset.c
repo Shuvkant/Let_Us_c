@@ -15,21 +15,21 @@
 // }
 
 
-/*This program calculates the simple interest taking the data from the user*/
-/*Date : 2080/01/27 Author: Shuvkant Chaudhary Phanait*/
-#include<stdio.h>
-int main(){
-    float prin, roi, time, si;
-    printf("Enter the principal amount:");
-    scanf("%f", &prin);
-    printf("Enter the rate of interest:");
-    scanf("%f",&roi );
-    printf("Enter the time :");
-    scanf("%f", &time);
-    si=(prin*time*roi)/100;
-    printf("The principal amount is: Rs%.2f\nRate of interest is: %.2f\nThe time period is: %.2f years", prin, roi, time);
-    printf("\nThe required simple interest at the rate %.2f for %.2f years is %.2f", roi, time, si);
-}
+// /*This program calculates the simple interest taking the data from the user*/
+// /*Date : 2080/01/27 Author: Shuvkant Chaudhary Phanait*/
+// #include<stdio.h>
+// int main(){
+//     float prin, roi, time, si;
+//     printf("Enter the principal amount:");
+//     scanf("%f", &prin);
+//     printf("Enter the rate of interest:");
+//     scanf("%f",&roi );
+//     printf("Enter the time :");
+//     scanf("%f", &time);
+//     si=(prin*time*roi)/100;
+//     printf("The principal amount is: Rs%.2f\nRate of interest is: %.2f\nThe time period is: %.2f years", prin, roi, time);
+//     printf("\nThe required simple interest at the rate %.2f for %.2f years is %.2f", roi, time, si);
+// }
 
 
 
@@ -255,3 +255,22 @@ int main(){
 // }
 
 
+
+/*To reverse the given number*/
+#include<stdio.h>
+int main(){
+ int number, original_number, remainder, sum, new_number;
+    new_number=0;
+    printf("Enter the number:");
+    scanf("%d", &number);
+    original_number=number;
+    do
+    {
+      remainder=number%10;
+      new_number=new_number*10+remainder;
+      number=number/10;
+        /* code */
+    } while (number>=1);
+    printf("The new number is %d", new_number);
+return 0;
+}
