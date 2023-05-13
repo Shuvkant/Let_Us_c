@@ -256,21 +256,140 @@
 
 
 
-/*To reverse the given number*/
-#include<stdio.h>
-int main(){
- int number, original_number, remainder, sum, new_number;
-    new_number=0;
-    printf("Enter the number:");
-    scanf("%d", &number);
-    original_number=number;
-    do
-    {
-      remainder=number%10;
-      new_number=new_number*10+remainder;
-      number=number/10;
-        /* code */
-    } while (number>=1);
-    printf("The new number is %d", new_number);
-return 0;
-}
+
+
+
+
+
+// /*To reverse the given number*/
+// #include<stdio.h>
+// int main(){
+//  int number, original_number, remainder, sum, new_number;
+//     new_number=0;
+//     printf("Enter the number:");
+//     scanf("%d", &number);
+//     original_number=number;
+//     do
+//     {
+//       remainder=number%10;
+//       new_number=new_number*10+remainder;
+//       number=number/10;
+//         /* code */
+//     } while (number>=1);
+//     printf("The new number is %d", new_number);
+// return 0;
+// }
+
+
+// /*To find the sum of first and last digit of the number*/
+// /*Shuvkant Chaudhary Phanait   Date: 2023/05/13*/
+// #include<stdio.h>
+// int main(){
+//   int firstDigit, lastDigit, number, sum, original_number;
+//   printf("Enter the number:");
+//   scanf(" %d", &number);
+//   original_number=number;
+  //For the first digit
+//   firstDigit=number%10;
+//   while (number>=10)
+//   {
+//     number/=10;
+//     lastDigit=number;
+//   }
+//   sum=firstDigit+lastDigit;
+//   printf("The original numbers was: %d",original_number ); 
+//   printf("\nThe sum of the first and last digit is %d", sum);
+//   return 0;
+// }
+
+
+
+
+// /*Illiterate person in a town*/
+// #include<stdio.h>
+// int main(){
+//   int totalPopulation, malePercent, male_literacy_rate, female_literacy_rate, female_population_rate, total_literacy_rate;
+//   int male_population, female_population, total_literate_population, male_literate, female_literate, male_illetarate, female_illeterate;
+//   printf("Enter the population of the town:");
+//   scanf("%d", &totalPopulation);
+//   printf("Enter the male percentage rate:");
+//   scanf("%d", &malePercent);
+//   printf("Enter the male_literacy_rate: ");
+//   scanf("%d", &male_literacy_rate);
+//   printf("Enter the total_literacy_rate:");
+//   scanf("%d", &total_literacy_rate);
+//   male_population=(malePercent*totalPopulation)/100;;              //finds total male population
+//   male_literate=(male_literacy_rate*totalPopulation)/100;          //finds total male literate population
+//   male_illetarate=(male_population-male_literate);                  //finds total male illeterate population
+//   female_population=((100-malePercent)/100)*totalPopulation;         //finds total female population
+//   total_literate_population=(total_literacy_rate/100)*totalPopulation;        //finds total literate population of teh town
+//   female_literate=total_literate_population-male_literate;                    //finds total female literate population
+//   female_illeterate=female_population-female_literate;                        //finds total femaale illeterate population
+// printf("Total female_illeterate:-%d",female_illeterate );
+// printf("\nTotal male illeterate:-%d", male_illetarate);
+// }
+
+
+// /*This program allows the cashier to give the currency notes of each denominations:*/
+// /*2023/05/1*/
+// #include<stdio.h>
+// int main(){
+//     int amount, thousands, five_hundreds, hundreds, fifties, twenties, tens, fives, twos, ones;
+//     printf("Enter the amount to be withdrawn");
+//     scanf("%d", &amount);
+//     thousands=amount/1000;
+//     amount=amount%1000;
+
+//     five_hundreds=amount/500;
+//     amount=amount%500;
+
+//     hundreds=amount/100;
+//     amount=amount%100;
+
+//     fifties=amount/50;
+//     amount=amount%50;
+
+//     twenties=amount/20;
+//     amount=amount%20;
+
+//     tens=amount/10;
+//     amount=amount%10;
+
+//     fives=amount/5;
+//     amount=amount%5;
+
+//     twos=amount/2;
+//     amount=amount%2;
+
+//     ones=amount/1;
+    
+
+//     printf("1000*%d\n", thousands);
+//     printf("500*%d\n", five_hundreds);
+//     printf("100*%d\n", hundreds);
+//     printf("50*%d\n", fifties);
+//     printf("20*%d\n", twenties);
+//     printf("10*%d\n", tens);
+//     printf("5*%d\n", fives);
+//     printf("2*%d\n", twos);
+//     printf("1*%d\n",ones );
+// }
+
+
+
+// /*Calculates the cost price*/
+// #include<stdio.h>
+// int main(){
+//   float cost_price, selling, price, profit;
+//   printf("Enter the selling price of all 15 pencils:");
+//   scanf("%f", &selling);
+//   printf("Enter the profit amount:");
+//   scanf("%f", &profit);
+//   cost_price=(selling-profit)/15.0;
+//   printf("The cost price of each pencil is %.2f", cost_price);
+//   return 0;
+
+// }
+
+
+

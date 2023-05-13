@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
     int a;
-    a=7/10;
+    a=30%50;
     printf("%d", a);
 }
