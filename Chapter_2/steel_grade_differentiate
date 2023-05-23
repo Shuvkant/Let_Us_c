@@ -1,0 +1,36 @@
+/*Program for the steel company*/
+#include<stdio.h>
+int main(){
+    double hardness, c_content, tensile;
+    int grade;
+    printf("Enter the hardness, carbon_content and tensile strength of the steel:");
+    scanf("%lf%lf%lf", &hardness, &c_content, &tensile);
+    if(hardness>=50 && c_content>=0.7 && tensile>=5600){
+        grade=10;
+        printf("The steel is grade %d",grade);
+    }
+    else if(hardness>=50 && c_content>=0.7){
+        grade=9;
+        printf("The steel is grade %d",grade);
+    }
+    else if( c_content>=0.7 && tensile>=5600){
+        grade=8;
+        printf("The steel is grade %d",grade);
+    }
+    else if(hardness>=50 && tensile>=5600){
+        grade=7;
+        printf("The steel is grade %d",grade);
+    }
+    else if(hardness>=50 || c_content>=0.7 || tensile>=5600){
+        grade=6;
+        printf("The steel is grade %d",grade);
+    }
+    else if(hardness !=50 && c_content !=0.7 && tensile !=5600){
+        grade=5;
+        printf("The steel is grade %d",grade);
+    }
+    else{
+        printf("Can't be determined.");
+    }
+
+}
